@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #508836;
+}
+
+.header{
+    background-color: #508836;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px, 0;
+    margin-bottom: 15px;
+}
+
+.header h1{
+    font-size: 6em;
+}
+
+.header p{
+    font-size: 1.5em;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box{
+    background-color: #bad4ad;
+    padding: 20px;
+    width: 60%;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.box h2{
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.box p::selection{
+    background-color: #d17926;
+    color: #ffffff;
+}
+
+.box p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    padding: 20px;
+    text-align: justify;
+}
+
+.box ul li{
+    font-size: 1.6em;
+    list-style-type: none;
+}
+
+.footer{
+    background-color: #63774e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.parallax1{
+    background-image: url(https://as2.ftcdn.net/v2/jpg/02/87/07/97/1000_F_287079726_VAGpgb3MDBPsB3O6A5lVCFnu9SsNtJEF.jpg);
+}
+
+.parallax2{
+    background-image: url(https://img.freepik.com/fotos-premium/uma-tigela-de-guacamole-com-guacamole-ao-fundo_198067-1212903.jpg?w=900);
+}
+
+.parallax3{
+    background-image: url(https://img.freepik.com/fotos-premium/guacamole-caseiro-numa-tigela-de-barro_198067-1215282.jpg?w=900);
+}
+
+.parallax{
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 480px) {
+    .box {
+        flex: 1 2 100%;
+        width: 20px;
+    }
+
+    .header h1 {
+        font-size: 50px;
+    }
+
+    .box p{
+        font-size: 1.2em;
+    }
+
+}
